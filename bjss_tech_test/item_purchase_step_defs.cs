@@ -358,7 +358,7 @@ namespace bjss_tech_test
 
         Dictionary<String, String> POST_user_details = new Dictionary<string, string>();
 
-        [Given(@"I want to create a user with the following details")]
+        [Given(@"I want to create a user with the following details:")]
         public void GivenIWantToCreateAUserWithTheFollowingDetails(Table table)
         {
             string url = "https://reqres.in/api/users/";

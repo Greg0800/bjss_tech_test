@@ -140,9 +140,11 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Customer reviews previous order and adds message")]
+        [NUnit.Framework.CategoryAttribute("purchase")]
         public virtual void CustomerReviewsPreviousOrderAndAddsMessage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Customer reviews previous order and adds message", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Customer reviews previous order and adds message", new string[] {
+                        "purchase"});
 #line 34
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -161,20 +163,22 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Customer reviews previous order and adds message to invalid product")]
+        [NUnit.Framework.CategoryAttribute("purchase")]
         public virtual void CustomerReviewsPreviousOrderAndAddsMessageToInvalidProduct()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Customer reviews previous order and adds message to invalid product", ((string[])(null)));
-#line 41
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Customer reviews previous order and adds message to invalid product", new string[] {
+                        "purchase"});
+#line 42
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 42
- testRunner.And("I go to my order history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 43
- testRunner.And("I select my most recent order and view its details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I go to my order history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 44
- testRunner.When("I add a message to item \"7\" in the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I select my most recent order and view its details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 45
+ testRunner.When("I add a message to item \"7\" in the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 46
  testRunner.Then("I should see that message has been added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -182,20 +186,22 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("API get call of user details")]
+        [NUnit.Framework.CategoryAttribute("api")]
         public virtual void APIGetCallOfUserDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API get call of user details", ((string[])(null)));
-#line 48
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API get call of user details", new string[] {
+                        "api"});
+#line 49
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 49
- testRunner.Given("I want to retrieve user \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 50
- testRunner.Then("the first name should be \"Janet\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I want to retrieve user \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 51
- testRunner.And("the last name should be \"Weaver\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the first name should be \"Janet\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 52
+ testRunner.And("the last name should be \"Weaver\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 53
  testRunner.And("the id should be \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -203,10 +209,12 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("API create call for user")]
+        [NUnit.Framework.CategoryAttribute("api")]
         public virtual void APICreateCallForUser()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API create call for user", ((string[])(null)));
-#line 55
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API create call for user", new string[] {
+                        "api"});
+#line 56
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
@@ -220,9 +228,9 @@ this.FeatureBackground();
             table3.AddRow(new string[] {
                         "job",
                         "Fireworks operative"});
-#line 56
+#line 57
  testRunner.Given("I want to create a user with the following details:", ((string)(null)), table3, "Given ");
-#line 60
+#line 61
  testRunner.Then("the response details should match", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -230,10 +238,12 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("API update call to update user details")]
+        [NUnit.Framework.CategoryAttribute("api")]
         public virtual void APIUpdateCallToUpdateUserDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API update call to update user details", ((string[])(null)));
-#line 63
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API update call to update user details", new string[] {
+                        "api"});
+#line 64
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
@@ -247,9 +257,9 @@ this.FeatureBackground();
             table4.AddRow(new string[] {
                         "job",
                         "Fireworks Engineer"});
-#line 64
+#line 65
  testRunner.Given("I want to update user \"7\" with the following details:", ((string)(null)), table4, "Given ");
-#line 68
+#line 69
  testRunner.Then("the response details should match", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -257,16 +267,18 @@ this.FeatureBackground();
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("API delete call to remove user")]
+        [NUnit.Framework.CategoryAttribute("api")]
         public virtual void APIDeleteCallToRemoveUser()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API delete call to remove user", ((string[])(null)));
-#line 71
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("API delete call to remove user", new string[] {
+                        "api"});
+#line 72
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 72
- testRunner.Given("I want to remove user \"7\" from the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 73
+ testRunner.Given("I want to remove user \"7\" from the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 74
  testRunner.Then("the call to get user \"7\" details should fail", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
