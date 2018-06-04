@@ -55,7 +55,7 @@ namespace bjss_tech_test
             string message = "Exception:- " + DateTime.Now.ToString("yyyy-MM-dd-hhmm-ss");
             var screenshot = driver.TakeScreenshot();
             Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-            ss.SaveAsFile("message"+".png", ScreenshotImageFormat.Png);
+            ss.SaveAsFile(message+".png", ScreenshotImageFormat.Png);
         }
 
         [AfterScenario("purchase")]
@@ -301,7 +301,7 @@ namespace bjss_tech_test
                 string message = "Exception- " + DateTime.Now.ToString("yyyy-MM-dd-hhmm-ss");
                 var screenshot = driver.TakeScreenshot();
                 Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-                ss.SaveAsFile("message" + ".png", ScreenshotImageFormat.Png);
+                ss.SaveAsFile(message + ".png", ScreenshotImageFormat.Png);
             }
 
             product_selector.SendKeys(products_list[item_no].Text);
@@ -332,7 +332,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.DownloadString(url);
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
 
                 response_json = JObject.Parse(data);
             }
@@ -371,7 +371,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.UploadString(url, datastring);
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
 
                 response_json = JObject.Parse(data);
             }
@@ -397,7 +397,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.UploadString(url, datastring);
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
 
                 response_json = JObject.Parse(data);
             }
@@ -412,7 +412,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.DownloadString(url);
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
 
                 deleted_user = JObject.Parse(data);
             }
@@ -421,7 +421,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.UploadString(url, "PUT", "");
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
             }
         }
 
@@ -433,7 +433,7 @@ namespace bjss_tech_test
             {
                 client.Headers[HttpRequestHeader.ContentType] = "application/json";
                 var data = client.DownloadString(url);
-                Console.Write(data.ToString());
+                //Console.Write(data.ToString());
 
                 response_json = JObject.Parse(data);
             }
