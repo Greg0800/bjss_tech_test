@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bjss_tech_test", "bjss_tech_test\bjss_tech_test.csproj", "{7FBB6FBA-DF78-4106-AD7B-055E45068CF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{182EDA8F-7BBA-4BFF-893E-6277CC68A60E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FBB6FBA-DF78-4106-AD7B-055E45068CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBB6FBA-DF78-4106-AD7B-055E45068CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBB6FBA-DF78-4106-AD7B-055E45068CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBB6FBA-DF78-4106-AD7B-055E45068CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06B576B7-3C1D-4A79-BDFD-1F2C6D4F6E35}
+	EndGlobalSection
+EndGlobal
