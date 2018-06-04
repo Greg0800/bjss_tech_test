@@ -9,4 +9,6 @@ To run the tests:
 
 2. To begin execution : "nunitlite-runner .\bjss_tech_test\bin\Release\bjss_tech_test.dll"
 
-3. Following the test run, within the current directory there will be 2 new files - a .png image of a failed test step, and an .xml file of the test results.
+3. Following the test run, within the current directory there will be 2 new files
+  - a .png image of a failed test step
+  - an .xml file of the test results.
