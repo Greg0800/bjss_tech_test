@@ -82,7 +82,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>purchase_items.feature</DependentUpon>
     </Compile>
-    <Compile Include="Users\user1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
