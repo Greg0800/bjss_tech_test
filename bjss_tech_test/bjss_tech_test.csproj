@@ -77,6 +77,11 @@
     <Compile Include="PageObjects\quick_view_page.cs" />
     <Compile Include="PageObjects\site_wide_objects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="api_tests.feature.cs">
+      <DependentUpon>api_tests.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="purchase_items.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +91,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="api_tests.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>api_tests.feature.cs</LastGenOutput>
+    </None>
     <None Include="purchase_items.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>purchase_items.feature.cs</LastGenOutput>

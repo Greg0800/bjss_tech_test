@@ -33,7 +33,7 @@ namespace bjss_tech_test
         Dictionary<String, String>[] dicts = new Dictionary<string, string>[2];
         public int dict_counter = 0;
 
-        [BeforeScenario]
+        [BeforeScenario("purchase")]
         public void InitializeChromeDriver()
         {
             ChromeOptions options = new ChromeOptions();
@@ -58,7 +58,7 @@ namespace bjss_tech_test
             ss.SaveAsFile("message"+".png", ScreenshotImageFormat.Png);
         }
 
-        [AfterScenario]
+        [AfterScenario("purchase")]
         public void logout()
         {
             Thread.Sleep(1000);
